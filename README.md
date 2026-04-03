@@ -130,6 +130,7 @@ app.run(host='0.0.0.0', port=5000, debug=False)
 powershell
 cd E:\neo4j\neo4j-community-5.26.8\bin
 .\neo4j start
+
 2. 服务启动失败
 错误: Neo4j service is not installed
 解决: 以管理员身份运行PowerShell
@@ -137,6 +138,7 @@ cd E:\neo4j\neo4j-community-5.26.8\bin
 powershell
 .\neo4j install-service
 .\neo4j start
+
 3. 语音识别失败
 原因: 浏览器未授权麦克风权限
 解决:
@@ -146,6 +148,7 @@ powershell
 使用Chrome或Edge浏览器
 
 确保使用 127.0.0.1 而非 localhost
+
 
 4. 意图识别服务连接失败
 错误: requests.exceptions.ConnectionError
