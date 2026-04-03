@@ -1,0 +1,192 @@
+
+        <!DOCTYPE html>
+        <html lang="zh-CN">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>智医AI - 医疗咨询报告</title>
+            <style>
+                * { margin: 0; padding: 0; box-sizing: border-box; }
+                body {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                    background: linear-gradient(135deg, #f5f7fa 0%, #e9eef5 100%);
+                    padding: 40px 20px;
+                }
+                .report-container {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    background: white;
+                    border-radius: 32px;
+                    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+                    overflow: hidden;
+                }
+                .report-header {
+                    background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+                    color: white;
+                    padding: 40px 48px;
+                    text-align: center;
+                }
+                .report-header h1 {
+                    font-size: 32px;
+                    font-weight: 600;
+                    margin-bottom: 12px;
+                }
+                .report-meta {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px 48px;
+                    background: #f8fafc;
+                    border-bottom: 1px solid #e2e8f0;
+                    flex-wrap: wrap;
+                    gap: 16px;
+                }
+                .meta-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: #475569;
+                    font-size: 14px;
+                }
+                .report-body { padding: 40px 48px; }
+                .section { margin-bottom: 32px; }
+                .section-title {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #1e3a5f;
+                    border-left: 4px solid #2c5282;
+                    padding-left: 16px;
+                    margin-bottom: 20px;
+                }
+                .consultation-item {
+                    background: #f8fafc;
+                    border-radius: 20px;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    border: 1px solid #e2e8f0;
+                }
+                .consultation-question {
+                    font-weight: 600;
+                    color: #1e3a5f;
+                    margin-bottom: 12px;
+                    padding-bottom: 8px;
+                    border-bottom: 1px dashed #cbd5e1;
+                }
+                .consultation-answer {
+                    color: #334155;
+                    line-height: 1.6;
+                }
+                .disease-tag {
+                    display: inline-block;
+                    background: #e6f0fa;
+                    color: #2c5282;
+                    padding: 4px 12px;
+                    border-radius: 20px;
+                    font-size: 12px;
+                    margin-right: 8px;
+                    margin-bottom: 8px;
+                }
+                .summary-box {
+                    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+                    border-radius: 24px;
+                    padding: 24px;
+                    margin-top: 32px;
+                }
+                .disclaimer {
+                    background: #fef9e6;
+                    border-left: 4px solid #f59e0b;
+                    padding: 16px 24px;
+                    margin-top: 32px;
+                    font-size: 12px;
+                    color: #92400e;
+                    border-radius: 12px;
+                }
+                .report-footer {
+                    background: #f1f5f9;
+                    padding: 24px 48px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #64748b;
+                }
+                .btn-group {
+                    display: flex;
+                    gap: 16px;
+                    justify-content: center;
+                    margin-top: 32px;
+                }
+                .btn {
+                    padding: 12px 28px;
+                    border-radius: 40px;
+                    border: none;
+                    font-size: 14px;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+                .btn-primary {
+                    background: linear-gradient(135deg, #1e3a5f, #2c5282);
+                    color: white;
+                }
+                .btn-secondary {
+                    background: white;
+                    color: #1e3a5f;
+                    border: 1px solid #cbd5e1;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="report-container">
+                <div class="report-header">
+                    <h1>🕊️ 智医AI · 医疗咨询报告 📋</h1>
+                    <div class="subtitle">圣洁之光 · 仁心守护 | 多专家联合会诊记录</div>
+                </div>
+                <div class="report-meta">
+                    <div class="meta-item">📅 会诊时间: 2026年04月01日 16:25</div>
+                    <div class="meta-item">👨‍⚕️ 会诊专家: 陈明远 · 呼吸科</div>
+                    <div class="meta-item">🔢 咨询轮次: 1 次</div>
+                    <div class="meta-item">🏷️ 报告编号: SESSION_</div>
+                </div>
+                <div class="report-body">
+                    <div class="section">
+                        <div class="section-title">📋 涉及疾病/健康问题</div>
+                        <div><span class="disease-tag">🏥 感冒</span></div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">💬 详细会诊记录</div>
+                        
+            <div class="consultation-item">
+                <div class="consultation-question">
+                    <span style="background: #1e3a5f; color: white; padding: 2px 10px; border-radius: 20px; font-size: 12px; margin-right: 12px;">Q1</span>
+                    患者咨询
+                </div>
+                <div class="consultation-question" style="color: #2c5282; margin-top: 8px;">
+                    感冒
+                </div>
+                <div class="consultation-answer" style="margin-top: 12px;">
+                    <span style="color: #2c5282; font-weight: 500;">👨‍⚕️ 专家回复：</span><br>
+                    📖 感冒<br><br>上呼吸道感染，由病毒引起
+                </div>
+            </div>
+            
+                    </div>
+                    <div class="summary-box">
+                        <div style="font-weight: 600; margin-bottom: 12px; color: #1e3a5f;">📊 会诊总结</div>
+                        <div style="line-height: 1.6; color: #334155;">
+                            <p>本次会诊共进行 <strong>1</strong> 轮咨询。</p>
+                            <p style="margin-top: 12px;">⚠️ 温馨提示：本报告仅供参考，不能替代线下医疗诊断。</p>
+                        </div>
+                    </div>
+                    <div class="disclaimer">
+                        <strong>📢 重要声明</strong><br>
+                        本报告由智医AI系统自动生成，基于医学知识图谱和临床指南提供参考信息。报告内容不构成医疗诊断或治疗建议。
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="window.print()">🖨️ 打印报告</button>
+                        <button class="btn btn-secondary" onclick="window.close()">✖️ 关闭窗口</button>
+                    </div>
+                </div>
+                <div class="report-footer">
+                    智医AI · 圣洁多专家会诊平台 | 生成时间: 2026-04-01 16:25:20
+                </div>
+            </div>
+        </body>
+        </html>
+        
